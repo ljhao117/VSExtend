@@ -1,52 +1,18 @@
-<<<<<<< HEAD
-# hello-world README
+# VSExtend README
 
-This is the README for your extension "hello-world". After writing up a brief description, we recommend including the following sections.
+I find out that coders are hate writing comment in code. Some of them may think it hrad to write and wasting lot of time. So I want to develop a VS extend that can make a comment quickly and there is a lot of comment extends I can choose but still want to make one by myself.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+I still learning how to develop a extend, so can't make sure my unfinish extend could have any feature ;) 
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+A computer installed VSCode I guess?
 
-## Extension Settings
+### 0.0.1
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Hello World in console log and window message information
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -64,6 +30,3 @@ Added features X, Y, and Z.
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
-=======
-# VSExtend
->>>>>>> d2ac4f63d693bc952ad3666f6282cc38be83ae01
