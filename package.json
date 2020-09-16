@@ -1,7 +1,7 @@
 {
-	"name": "hello-world",
-	"displayName": "Hello World",
-	"description": "",
+	"name": "wordcount",
+	"displayName": "WordCount",
+	"description": "WordCount",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.48.0"
@@ -10,9 +10,9 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:hello-world.helloWorld"
+		"*"
 	],
-	"main": "./out/extension.js",
+	"main": "./src/extension.ts",
 	"contributes": {
 		"commands": [
 			{
