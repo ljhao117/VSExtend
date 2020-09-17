@@ -13,10 +13,36 @@ function activate(context) {
     // The command has been defined in the package.json file
     // Now provide the implementation of the command with registerCommand
     // The commandId parameter must match the command field in package.json
-    let disposable = vscode.commands.registerCommand('hello-world.helloWorld', () => {
+    let disposable = vscode.commands.registerCommand('extension.createBoilerplate', () => {
         // The code you place here will be executed every time your command is executed
         // Display a message box to the user
-        vscode.window.showInformationMessage('Hello World from Hello World!');
+        // vscode.window.showInformationMessage('Hello World from extension.js!');
+        const fs = require("fs");
+        const path = require("path");
+        const folderPath = vscode.workspace.workspaceFolders[0].uri
+            .toString()
+            .split(":")[1];
+
+        const htmlContent = `<!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="app.css" />
+    </head>
+    <body>
+        <script src="app.js"></script>
+    </body>
+    </html>`;
+
+        fs.writeFile(path.join(folderPath, "index.html"), htmlContent, err => {
+            if (err) {
+                return vscode.window.showErrorMessage("Failed to create boilerplate file!");
+            }
+            vscode.window.showInformationMessage("Created boilerplate files");
+        });
+
     });
     context.subscriptions.push(disposable);
 }

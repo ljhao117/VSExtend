@@ -12,12 +12,12 @@
 	"activationEvents": [
 		"*"
 	],
-	"main": "./src/extension.ts",
+	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "hello-world.helloWorld",
-				"title": "Hello World"
+				"command": "extension.createBoilerplate",
+				"title": "Create Boilerplate"
 			}
 		]
 	},
