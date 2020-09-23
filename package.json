@@ -1,7 +1,7 @@
 {
-	"name": "helloworld-sample",
-	"displayName": "helloworld-sample",
-	"description": "helloworld example for VS Code",
+	"name": "code-actions-sample",
+	"displayName": "Code Actions Provider Sample",
+	"description": "Code Actions Provider Sample",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.48.0"
@@ -10,7 +10,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.helloWorld",
+		"onLanguage:markdown"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
