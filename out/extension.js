@@ -1,8 +1,11 @@
 "use strict";
 
-import * as vscode from 'vscode';
+// import * as vscode from 'vscode';
 
-export function activate(context: vscode.ExtensionContext) {
+const vscode = require("vscode");
+// import {subscribeToDocumentChanges, EMOJI_MENTION} from './src/diagnostic';
+
+function activate(context) {
     const disposable = vscode.commands.registerCommand('extension.reverseWord', function () {
         // Get the active text editor
         const editor = vscode.window.activeTextEditor;
@@ -14,7 +17,7 @@ export function activate(context: vscode.ExtensionContext) {
             // Get the word within the selection
             const word = document.getText(selection);
             const reversed = word.split('').reverse().join('');
-            editor.edit(editBuilder => {
+            editor.edit((editBuilder) => {
                 editBuilder.replace(selection, reversed);
             });
         }
@@ -22,3 +25,4 @@ export function activate(context: vscode.ExtensionContext) {
     
     context.subscriptions.push(disposable);
 }
+exports.activate = activate;
