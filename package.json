@@ -1,7 +1,7 @@
 {
-	"name": "code-actions-sample",
-	"displayName": "Code Actions Provider Sample",
-	"description": "Code Actions Provider Sample",
+	"name": "reverseword",
+	"displayName": "ReverseWord",
+	"description": "Reverse a word",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.48.0"
@@ -10,15 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld",
-		"onLanguage:markdown"
+		"onCommand:extension.reverseWord"
 	],
-	"main": "./out/extension.js",
+	"main": "./out/extension",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "extension.reverseWord",
+				"title": "Reverse Word"
 			}
 		]
 	},
