@@ -1,7 +1,7 @@
 {
-	"name": "reverseword",
-	"displayName": "ReverseWord",
-	"description": "Reverse a word",
+	"name": "shortcut comment",
+	"displayName": "Create a comment quickly",
+	"private": true,
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.48.0"
@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.reverseWord"
+		"onCommand:extension.shortcutComment"
 	],
-	"main": "./out/extension",
+	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.reverseWord",
-				"title": "Reverse Word"
+				"command": "extension.shortcutComment",
+				"title": "Shortcut Comment"
 			}
 		]
 	},
