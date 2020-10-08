@@ -1,14 +1,18 @@
 # VSExtend README
 
-I find out that coders are hate writing comment in code. Some of them may think it hrad to write and wasting lot of time. So I want to develop a VS extend that can make a comment quickly and there is a lot of comment extends I can choose but still want to make one by myself.
+I find out that coders are hate writing comment in code. Some of them may think it hrad to write and wasting lot of time. So I want to develop a VS extend that can make a comment quickly and there is a lot of comment    extends I can choose but still want to make one by myself.
 
 ## Features
 
-I still learning how to develop a extend, so can't make sure my unfinish extend could have any feature ;) 
+I still learning how to develop a extend, so can't make sure my unfinished extend could have any feature ;) 
 
 ## Requirements
 
 A computer installed VSCode I guess?
+
+### 0.0.2
+
+Demo version had release
 
 ### 0.0.1
 

@@ -2,7 +2,7 @@
 	"name": "shortcut comment",
 	"displayName": "Create a comment quickly",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.48.0"
 	},
@@ -18,6 +18,12 @@
 			{
 				"command": "extension.shortcutComment",
 				"title": "Shortcut Comment"
+			}
+		],
+		"keybindings":[
+			{
+				"command": "extension.shortcutComment",
+				"key": "ctrl+shift+/"
 			}
 		]
 	},
