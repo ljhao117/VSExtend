@@ -6,7 +6,7 @@ function activate(context) {
         // Get the active text editor
         const editor = vscode.window.activeTextEditor;
 
-        const comment = '/***/';
+        const comment = '/**\r * \r*/';
         if (editor) {
             const selection = editor.selection;
 
